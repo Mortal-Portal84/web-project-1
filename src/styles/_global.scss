@@ -16,30 +16,17 @@ body {
 }
 
 #root {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  align-self: center;
-  max-width: $viewport;
-  min-height: 90vh;
-  margin: 0 auto;
+
 }
 
 h1 {
-  font-size: toRem(50px);
-  text-align: center;
+ 
 }
 
 a {
-  color: white;
+  
 }
 
 .nav {
-  text-align: center;
-
-  &__link {
-    font-size: toRem(30px);
-    text-decoration: none;
-  }
+ 
 }
