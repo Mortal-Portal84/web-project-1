@@ -1,32 +1,17 @@
-:root {
-  font-size: $font-size; // for dynamic size use something like: calc(1vw + 0.6em)
-  font-family: $font-family;
-}
-
-html {
-  background: $background-color;
-  color: $font-color;
-  max-width: 100%;
-  line-height: 1.4;
-}
-
 body {
-  margin: 0;
-  width: 100%;
+  font-family: $font-family; 
+  font-size: $font-size;
+    
+  line-height: 1.6;
+
+  color: $font-color;
 }
 
-#root {
-
+p {
+  margin: 0 0 10px;
 }
 
-h1 {
- 
-}
-
-a {
-  
-}
-
-.nav {
- 
+header {
+  min-height: 100vh;
+  background: $background-color center / cover no-repeat url(../images/bg.jpg);  
 }
