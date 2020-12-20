@@ -29,14 +29,14 @@ header {
 
 .nav__link-logo {
   display: block;
-  margin-left: 7.6rem;
+  margin-left: toRem(120px);
 }
 
 .nav__link {
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: toRem(22px);;
 
-  margin-right: 2.3rem;
+  margin-right: toRem(42px);;
 }
 
 .nav__link.active {
@@ -46,7 +46,7 @@ header {
 // Header
 
 .header__points {
-  max-width: 130px;
+  max-width: toRem(130px);
   min-height: 60vh;
   border-right: 1px solid rgba(#fff, 0.4);
   display: flex;
@@ -57,7 +57,7 @@ header {
 
 .point {
   padding: 0 10px;
-  margin-bottom: 36px;
+  margin-bottom: toRem(36px);
 }
 
 .header__scroll {
@@ -65,17 +65,19 @@ header {
 }
 
 .header__scroll-title {
-  font-size: 0.8rem;
+  font-size: toRem(14px);
+  text-transform: uppercase;
   transform: rotate(-90deg);
   position: absolute;
-  left: 113px;
-  top: 44px;;    
+  left: toRem(103px);
+  top: toRem(54px);
+
 }
 
 .header__scroll-arrow {
   position: absolute;
-  left: 126px;
-  top: 89px;
+  left: toRem(126px);
+  top: toRem(112px);
  
 }  
 
