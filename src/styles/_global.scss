@@ -34,13 +34,12 @@ header {
 
 .nav__link {
   font-weight: 600;
-  font-size: toRem(22px);;
-
-  margin-right: toRem(42px);;
-}
-
-.nav__link.active {
-  color: #40DAEF;
+  font-size: toRem(22px);
+  margin-right: toRem(42px);
+  &:hover{
+    color: #40DAEF;
+    transition: linear 0.3s;
+  }
 }
 
 // Header
