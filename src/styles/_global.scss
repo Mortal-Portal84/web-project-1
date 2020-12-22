@@ -88,14 +88,14 @@ header {
 .header__text {
   display: flex;
   flex-direction: column;
-  width: 584px;
+  width: 530px;
 }
 
 .header__title {
   font-style: normal;
   font-weight: bold;
-  font-size: 72px;
-  line-height: 88px;
+  font-size: toRem(72px);
+  line-height: 1.4;
 }
 
 .header__subtitle {
@@ -124,13 +124,33 @@ header {
 
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: toRem(24px);
   line-height: toRem(29px);
   text-align: center;
   
-
   border: 2px solid #18E3FF;
   box-sizing: border-box;
   border-radius: toRem(48px);
   padding: toRem(26px) toRem(50px);
+}
+
+.icon-fb {
+  display: block;
+  fill: white;
+  width: 12px;
+  height: 21px;  
+}
+
+.icon-tw {
+  display: block;
+  fill: white;
+  width: 13px;
+  height: 17px;  
+}
+
+.icon-vk {
+  display: block;
+  fill: white;
+  width: 20px;
+  height: 12px;  
 }
