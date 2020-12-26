@@ -16,7 +16,7 @@ header {
   nav {
     .nav__wrap {
       min-height: 150px;
-      max-width: 82%;
+      max-width: 87%;
 
       display: flex;
       justify-content: space-between;
@@ -57,12 +57,13 @@ header {
   .header__container {
     display: flex;
     justify-content: space-between;
+    min-height: 82vh;
 
     .scroll {
       min-width: 130px;
 
       .scroll__wrap {
-        min-height: 63vh;
+        min-height: 64vh;
         border-right: 1px solid rgba(255, 255, 255, 0.4);
 
         display: flex;
@@ -92,7 +93,10 @@ header {
     .header__text {
 
       max-width: 574px;
-      
+      align-self: center;
+      margin-top: -116px;
+
+
       .header__title {
         font-weight: bold;
         font-size: 72px;
@@ -134,9 +138,23 @@ header {
       }
     }
 
+    .header__img {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .img-1 {
+        padding-right: 30px;        
+      }
+
+      .img-2 {
+        margin-bottom: -110px;
+      }
+    }
+
     .follow__social {
       min-width: 94px;
-      min-height: 63vh;
+      min-height: 64vh;
       border-left: 1px solid rgba(255, 255, 255, 0.4);
 
       display: flex;
@@ -145,7 +163,7 @@ header {
       align-items: center;
 
       .social {
-        padding: 45px 0;
+        padding: 24px 0;
       }
     }
   }
