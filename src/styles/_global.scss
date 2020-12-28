@@ -82,6 +82,7 @@ header {
         position: absolute;
         bottom: -120px;
         right: -57px;
+        padding: 10px 0;
 
         img {
           display: inline-block;
@@ -97,7 +98,7 @@ header {
       margin-top: -116px;
 
 
-      .header__title {
+      h1 {
         font-weight: bold;
         font-size: 72px;
         line-height: 1.3;
@@ -121,31 +122,16 @@ header {
 
         margin-bottom: 30px;
       }
-
-      .header__btn {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 1.2;
-        text-align: center;
-        padding: 26px 50px;
-
-        border: 2px solid #18E3FF;
-        box-sizing: border-box;
-        border-radius: 48px;
-        display: inline-block;
-
-      }
     }
 
     .header__img {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       align-items: center;
       margin-right: -110px;
 
       .img-1 {
-        padding-right: 30px;        
+        padding-right: 60px;
       }
 
       .img-2 {
@@ -153,7 +139,7 @@ header {
       }
     }
 
-    .follow__social {
+    .social {
       min-width: 94px;
       min-height: 64vh;
       border-left: 1px solid rgba(255, 255, 255, 0.4);
@@ -163,9 +149,65 @@ header {
       justify-content: center;
       align-items: center;
 
-      .social {
-        padding: 24px 0;
+      .social__ico {
+        padding: 10px 10px;
+        margin: 10px 10px;
       }
     }
   }
+}
+
+.btn {
+  min-width: 290px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  padding: 26px 50px;
+
+  border: 2px solid #18E3FF;
+  box-sizing: border-box;
+  border-radius: 48px;
+  display: inline-block;
+
+  &:hover {
+    color: #a0e8f1;
+  }
+}
+
+.buy {
+  min-height: 85vh;
+
+  background: linear-gradient(180deg, #262729 0%, #17181A 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  img {
+    margin-right: -200px;
+  }
+
+  .buy__text {    
+    max-width: 530px;
+    margin-top: -50px;    
+
+    h2 {
+      font-weight: bold;
+      font-size: 48px;
+      text-transform: uppercase;
+
+      p {
+        font-size: 24px;
+        padding-bottom: 16px;
+      }
+    }
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+
 }
