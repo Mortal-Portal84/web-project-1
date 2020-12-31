@@ -7,4 +7,5 @@ import './index.html'
 // Styles
 import './styles/index.scss'
 
+
 example()
