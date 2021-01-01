@@ -16,7 +16,7 @@ p {
 }
 
 .header {
-  
+
   // position: fixed;
   // top: 0;
   // left: 0;
@@ -28,38 +28,81 @@ p {
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    
+
   }
 
-  &__logo {
-   
-  }
+  &__logo {}
 
   .nav {
     display: flex;
     justify-content: space-between;
     min-width: 40vw;
     flex-wrap: wrap;
-  
+
     &__link {
       font-weight: 600;
       font-size: 22px;
       line-height: 1.6;
-      padding: 0 20px;     
-  
+      padding: 0 20px;
+
       &:hover {
         color: $blue;
       }
 
       &--active {
-        color: $secondary;    
+        color: $secondary;
+      }
+    }
+  }
+}
+
+.scroll__dot {
+
+  .dot {
+
+    .dot__circle {
+      width: 26px;
+      height: 26px;
+      border: 1px solid rgba(#FFFFFF, 0);
+      box-sizing: border-box;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+    }
+
+    .dot__point {
+      width: 9px;
+      height: 9px;
+      background: $primary;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+
+    &--active {
+
+      .dot__circle {
+        width: 26px;
+        height: 26px;
+        border: 1px solid rgba(#FFFFFF, 0.5);
+        box-sizing: border-box;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+      }
+
+      .dot__point {
+        width: 9px;
+        height: 9px;
+        background: #18E3FF;
+        border-radius: 50%;
+        margin: 0 auto;
       }
     }
   }
 }
 
 .home {
-  
+
   background: $background-color center / cover no-repeat url(../images/bg.jpg);
 
 }
