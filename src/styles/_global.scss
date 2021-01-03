@@ -13,9 +13,10 @@ p {
 .header {
 
   // position: fixed;
-  // top: 0;
+  // z-index: 1;
   // left: 0;
   // right: 0;
+  // top: 0;
 
   &__container {
     max-width: 90vw;
@@ -30,7 +31,7 @@ p {
   .nav {
     display: flex;
     justify-content: space-between;
-    min-width: 36vw;  
+    min-width: 36vw;
     flex-wrap: nowrap;
 
     &__link {
@@ -95,8 +96,54 @@ p {
   }
 }
 
+.btn {
+  min-width: 290px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  padding: 26px 50px;
+
+  border: 2px solid #18E3FF;
+  box-sizing: border-box;
+  border-radius: 48px;
+  display: inline-block;
+
+  &:hover {
+    color: #a0e8f1;
+  }
+}
+
+.img__details {
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .details__circle {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(#FFFFFF, 0.5);
+    box-sizing: border-box;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+
+    .details__point {
+      width: 14px;
+      height: 14px;
+      background: #18E3FF;
+      box-shadow: 0px 0px 10px #18E3FF;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+  }
+}
+
 .home {
-  // display: flex;
+
   position: relative;
 
   background: $background-color center / cover no-repeat url(../images/bg.jpg);
@@ -112,18 +159,18 @@ p {
     left: 0;
 
     width: 5vw;
-    height: 70vh;
+    height: 65vh;
     border-right: 1px solid #ffffff66;
 
     .dot {
-      margin-bottom: 60px;
+      margin-bottom: 40px;
     }
   }
 
   &__arrow-down {
     position: absolute;
     left: 37px;
-    bottom: 100px;
+    bottom: 160px;
     transform: rotate(-90deg);
 
     img {
@@ -137,7 +184,7 @@ p {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    height: 90vh;
+    height: 100vh;
   }
 
 
@@ -145,11 +192,8 @@ p {
   &__text {
 
     max-width: 575px;
-
-    .text__wrap {
-      margin-bottom: 20px;
-    }
-
+    margin-bottom: 30px;
+  
     h1 {
       font-weight: bold;
       font-size: 72px;
@@ -169,26 +213,7 @@ p {
       font-weight: normal;
       font-size: 18px;
       line-height: 1.2;
-    }
-
-    .btn {
-      min-width: 290px;
-
-      font-style: normal;
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 1.2;
-      text-align: center;
-      padding: 26px 50px;
-
-      border: 2px solid #18E3FF;
-      box-sizing: border-box;
-      border-radius: 48px;
-      display: inline-block;
-
-      &:hover {
-        color: #a0e8f1;
-      }
+      margin-bottom: 20px;
     }
   }
 
@@ -196,12 +221,26 @@ p {
     display: flex;
 
     .home__img-1 {
+      position: relative;
       align-self: flex-start;
       padding-right: 40px;
+
+      .img__details {
+        position: absolute;
+        top: 5%;
+        right: 30%;
+      }
     }
 
     .home__img-2 {
+      position: relative;
       align-self: center;
+
+      .img__details {
+        position: absolute;
+        top: -1%;
+        right: 51%;
+      }
     }
   }
 
@@ -217,7 +256,7 @@ p {
       align-items: center;
       flex-direction: column;
       width: 5vw;
-      height: 70vh;
+      height: 65vh;
       border-left: 1px solid #ffffff66;
 
       &__ico {
@@ -226,4 +265,44 @@ p {
       }
     }
   }
+}
+
+.buy {
+
+  background: linear-gradient(180deg, #262729 0%, #17181A 100%);
+
+  &__container {
+    @extend %container;
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+
+  img {
+    margin-right: -200px;
+  }
+
+  .buy__text {
+    width: 530px;
+    margin-top: -50px;
+
+    h2 {
+      font-weight: bold;
+      font-size: 48px;
+      text-transform: uppercase;
+
+      p {
+        font-size: 24px;
+        padding-bottom: 16px;
+      }
+    }
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+
 }
