@@ -12,11 +12,11 @@ p {
 
 .header {
 
-  // position: fixed;
-  // z-index: 1;
-  // left: 0;
-  // right: 0;
-  // top: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
 
   &__container {
     max-width: 90vw;
@@ -24,7 +24,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 106px;
+    height: 150px;
 
   }
 
@@ -155,11 +155,11 @@ p {
     flex-direction: column;
 
     position: absolute;
-    top: 0;
+    top: 150px;
     left: 0;
 
     width: 5vw;
-    height: 65vh;
+    height: 60vh;
     border-right: 1px solid #ffffff66;
 
     .dot {
@@ -183,8 +183,8 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    height: 100vh;
+    // flex-wrap: wrap;
+    min-height: 100vh;
   }
 
 
@@ -192,8 +192,7 @@ p {
   &__text {
 
     max-width: 575px;
-    margin-bottom: 30px;
-  
+      
     h1 {
       font-weight: bold;
       font-size: 72px;
@@ -213,12 +212,12 @@ p {
       font-weight: normal;
       font-size: 18px;
       line-height: 1.2;
-      margin-bottom: 20px;
     }
   }
 
   &__img {
     display: flex;
+    margin-bottom: 40px;
 
     .home__img-1 {
       position: relative;
@@ -247,7 +246,7 @@ p {
   &__follow {
 
     position: absolute;
-    top: 0;
+    top: 150px;
     right: 0;
 
     .social {
@@ -256,7 +255,7 @@ p {
       align-items: center;
       flex-direction: column;
       width: 5vw;
-      height: 65vh;
+      height: 60vh;
       border-left: 1px solid #ffffff66;
 
       &__ico {
