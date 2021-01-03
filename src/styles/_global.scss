@@ -37,7 +37,7 @@ p {
       font-weight: 600;
       font-size: 22px;
       line-height: 1.6;
-      // padding: 0 20px;
+      padding-left: 20px;
 
       &:hover {
         color: $blue;
@@ -144,7 +144,7 @@ p {
 
   &__text {
 
-    width: 34%;
+    max-width: 575px;
 
     .text__wrap {
       margin-bottom: 20px;
