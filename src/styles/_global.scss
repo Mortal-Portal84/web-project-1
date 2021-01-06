@@ -116,31 +116,29 @@ p {
   }
 }
 
-.img__details {
+.details__circle {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(#FFFFFF, 0.5);
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
 
   &:hover {
     cursor: pointer;
   }
 
-  .details__circle {
-    width: 30px;
-    height: 30px;
-    border: 1px solid rgba(#FFFFFF, 0.5);
-    box-sizing: border-box;
+  .details__point {
+    width: 14px;
+    height: 14px;
+    background: #18E3FF;
+    box-shadow: 0px 0px 10px #18E3FF;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-
-    .details__point {
-      width: 14px;
-      height: 14px;
-      background: #18E3FF;
-      box-shadow: 0px 0px 10px #18E3FF;
-      border-radius: 50%;
-      margin: 0 auto;
-    }
+    margin: 0 auto;
   }
 }
+
 
 .home {
 
@@ -169,7 +167,7 @@ p {
 
   &__arrow {
     position: absolute;
-    
+
     bottom: 70px;
     left: 0;
     width: 5vw;
@@ -230,30 +228,54 @@ p {
     }
   }
 
-  &__img {
+  &__pictures {
     display: flex;
     min-width: 500px;
-    
-    .home__img-1 {
-      position: relative;
-      align-self: flex-start;
-      padding-right: 40px;
+    align-self: center;
 
-      .img__details {
-        position: absolute;
-        top: 5%;
-        right: 30%;
+    .home__img {
+      margin-right: 40px;
+      
+      .details {
+        position: relative;
+        top: 0;
+        right: 0;
+        
+
+        &__descr {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+
+        &__line {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+
+
+        &__circle {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
       }
     }
 
-    .home__img-2 {
+
+
+    .home__img {
       position: relative;
       align-self: center;
 
       .img__details {
-        position: absolute;
-        top: -1%;
-        right: 51%;
+
+        .details__circle {
+          position: absolute;
+          top: -1%;
+          right: 51%;
+        }
       }
     }
   }
