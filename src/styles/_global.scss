@@ -34,7 +34,7 @@ p {
     min-width: 36vw;
     flex-wrap: nowrap;
 
-    &__link {
+    &__nav-link {
       font-weight: 600;
       font-size: 22px;
       line-height: 1.6;
@@ -53,7 +53,7 @@ p {
 
 .scroll {
 
-  .dot {
+  &-dot {
 
     &__circle {
       width: 26px;
@@ -63,19 +63,19 @@ p {
       border-radius: 50%;
       display: flex;
       align-items: center;
+    }
 
-      .dot__point {
-        width: 9px;
-        height: 9px;
-        background: $primary;
-        border-radius: 50%;
-        margin: 0 auto;
-      }
+    &__point {
+      width: 9px;
+      height: 9px;
+      background: $primary;
+      border-radius: 50%;
+      margin: 0 auto;
     }
 
     &--active {
 
-      .dot__circle {
+      .scroll-dot__circle {
         width: 26px;
         height: 26px;
         border: 1px solid rgba(#FFFFFF, 0.5);
@@ -83,40 +83,45 @@ p {
         border-radius: 50%;
         display: flex;
         align-items: center;
+      }
 
-        .dot__point {
-          width: 9px;
-          height: 9px;
-          background: #18E3FF;
-          border-radius: 50%;
-          margin: 0 auto;
-        }
+      .scroll-dot__point {
+        width: 9px;
+        height: 9px;
+        background: #18E3FF;
+        border-radius: 50%;
+        margin: 0 auto;
       }
     }
   }
 }
 
 .btn {
-  min-width: 290px;
+  display: inline-block;
+  box-sizing: border-box;
 
+  min-width: 290px;
+  padding: 28px 50px;
+
+  font-family: $font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 1.2;
+  line-height: 29px;
   text-align: center;
-  padding: 26px 50px;
 
+  background: transparent;
+  color: $primary;
   border: 2px solid #18E3FF;
-  box-sizing: border-box;
   border-radius: 48px;
-  display: inline-block;
 
   &:hover {
     color: #a0e8f1;
+    cursor: pointer;
   }
 }
 
-.details__circle {
+.img-details__circle {
   width: 30px;
   height: 30px;
   border: 1px solid rgba(#FFFFFF, 0.5);
@@ -129,7 +134,7 @@ p {
     cursor: pointer;
   }
 
-  .details__point {
+  .img-details__point {
     width: 14px;
     height: 14px;
     background: #18E3FF;
@@ -160,12 +165,12 @@ p {
     height: 60vh;
     border-right: 1px solid #ffffff66;
 
-    .dot {
+    .scroll-dot {
       margin-bottom: 40px;
     }
   }
 
-  &__arrow {
+  .home__arrow {
     position: absolute;
 
     bottom: 70px;
@@ -173,7 +178,7 @@ p {
     width: 5vw;
     height: 125px;
 
-    .arrow__wrap {
+    &-wrap {
       position: relative;
 
       a {
@@ -232,19 +237,23 @@ p {
     display: flex;
     min-width: 500px;
     align-self: center;
-    
-    .home__img {
+    // position can be different on any displays
+    align-self: flex-end;
+    margin-bottom: 60px;
+
+    .img-1 {
       margin-right: 40px;
       position: relative;
       bottom: 0;
       left: 0;
 
-      .img__details {
+      .home-img__wrap {
         position: absolute;
         bottom: 92%;
         left: 68%;
 
-        .details {
+        .img-details {
+
           width: 250px;
           height: 130px;
           position: relative;
@@ -259,7 +268,7 @@ p {
           &__line {
             position: absolute;
             bottom: 12px;
-            left: 11px;            
+            left: 11px;
           }
 
 
@@ -272,18 +281,18 @@ p {
       }
     }
 
-    .home__img-2 {
+    .img-2 {
       align-self: center;
       position: relative;
       bottom: 0;
       left: 0;
 
-      .img__details {
+      .home-img__wrap {
         position: absolute;
         bottom: 97%;
         right: 37%;
 
-        .details {
+        .img-details {
           width: 280px;
           height: 40px;
           position: relative;
@@ -298,7 +307,7 @@ p {
           &__line {
             position: absolute;
             bottom: 0;
-            left: 0;            
+            left: 0;
           }
 
 
@@ -327,7 +336,7 @@ p {
       height: 60vh;
       border-left: 1px solid #ffffff66;
 
-      &__ico {
+      &-ico {
         margin-bottom: 25px;
         padding: 5px;
       }
@@ -348,14 +357,14 @@ p {
     flex-wrap: wrap;
   }
 
-
-  img {
-    margin-right: -200px;
-  }
-
   .buy__text {
     width: 530px;
     margin-top: -50px;
+
+
+    .buy__wrap {
+      padding-bottom: 12px;
+    }
 
     h2 {
       font-weight: bold;
@@ -364,13 +373,7 @@ p {
 
       p {
         font-size: 24px;
-        padding-bottom: 16px;
       }
     }
   }
-
-  .btn {
-    margin-top: 10px;
-  }
-
 }

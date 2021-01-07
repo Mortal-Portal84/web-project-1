@@ -14,11 +14,11 @@
     <header class="header">
         <div class="header__container">
             <div class="header__logo"><img src="images/logo.png" alt="brand"></div>
-            <nav class="header__nav nav">
-                <a href="#" class="nav__link nav__link--active">Home</a>
-                <a href="#" class="nav__link">About</a>
-                <a href="#" class="nav__link">Product</a>
-                <a href="#" class="nav__link">Specification</a>
+            <nav class="nav">
+                <a href="#" class="nav__nav-link nav__nav-link--active">Home</a>
+                <a href="#" class="nav__nav-link">About</a>
+                <a href="#" class="nav__nav-link">Product</a>
+                <a href="#" class="nav__nav-link">Specification</a>
             </nav>
         </div>
     </header>
@@ -27,34 +27,33 @@
         <section class="home">
 
             <div class="home__scroll scroll">
-                <a href="#" class="dot dot--active">
-                    <div class="dot__circle">
-                        <div class="dot__point"></div>
+                <a href="#" class="scroll-dot scroll-dot--active">
+                    <div class="scroll-dot__circle">
+                        <div class="scroll-dot__point"></div>
                     </div>
                 </a>
-                <a href="#" class="dot">
-                    <div class="dot__circle">
-                        <div class="dot__point"></div>
+                <a href="#" class="scroll-dot">
+                    <div class="scroll-dot__circle">
+                        <div class="scroll-dot__point"></div>
                     </div>
                 </a>
-                <a href="#" class="dot">
-                    <div class="dot__circle">
-                        <div class="dot__point"></div>
+                <a href="#" class="scroll-dot">
+                    <div class="scroll-dot__circle">
+                        <div class="scroll-dot__point"></div>
                     </div>
                 </a>
-                <a href="#" class="dot">
-                    <div class="dot__circle">
-                        <div class="dot__point"></div>
+                <a href="#" class="scroll-dot">
+                    <div class="scroll-dot__circle">
+                        <div class="scroll-dot__point"></div>
                     </div>
                 </a>
             </div>
 
             <div class="home__arrow">
-                <div class="arrow__wrap">
+                <div class="home__arrow-wrap">
                     <a href="#">scroll</a>
                     <img src="images/arrow.svg" alt="arrow-down">
                 </div>
-
             </div>
 
             <div class="home__container">
@@ -73,54 +72,72 @@
                         the
                         fastest gunslinger on the battlefield.
                         <p>
-                            <a href="#" class="btn">Play advanced</a>
+                            <button class="btn" type="button">Play advanced</button>
                 </div>
 
                 <div class="home__pictures">
-                    <div class="home__img">
+                    <div class="home-img img-1">
                         <img src="images/sec1_img1.png" alt="mouse-original">
-                        <div class="img__details">
-                            <div class="details">
-                                <div class="details__descr">Hero 16K sensor</div>
-                                <img class="details__line" src="images/s1-line_1.svg" alt="line">
-                                <div class="details__circle">
-                                    <div class="details__point"></div>
+                        <div class="home-img__wrap">
+                            <div class="img-details">
+                                <div class="img-details__descr">Hero 16K sensor</div>
+                                <img class="img-details__line" src="images/s1-line_1.svg" alt="line">
+                                <div class="img-details__circle">
+                                    <div class="img-details__point"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="home__img-2">
+                    <div class="home-img img-2">
                         <img src="images/sec1_img2.png" alt="mouse-grenade">
-                        <div class="img__details">
-                            <div class="details">
-                                <div class="details__descr">Dual mode hyperfast scroll wheel</div>
-                                <img class="details__line" src="images/s1-line_2.svg" alt="line">
-                                <div class="details__circle">
-                                    <div class="details__point"></div>
+                        <div class="home-img__wrap">
+                            <div class="img-details">
+                                <div class="img-details__descr">Dual mode hyperfast scroll wheel</div>
+                                <img class="img-details__line" src="images/s1-line_2.svg" alt="line">
+                                <div class="img-details__circle">
+                                    <div class="img-details__point"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
 
             <div class="home__follow">
                 <div class="social">
-                    <a href="#" class="social__ico"><img src="images/facebook.svg" alt="fb"></a>
-                    <a href="#" class="social__ico"><img src="images/twitter.svg" alt="tw"></a>
-                    <a href="#" class="social__ico"><img src="images/vk.svg" alt="vk"></a>
+                    <a href="#" class="social-ico"><img src="images/facebook.svg" alt="fb"></a>
+                    <a href="#" class="social-ico"><img src="images/twitter.svg" alt="tw"></a>
+                    <a href="#" class="social-ico"><img src="images/vk.svg" alt="vk"></a>
+                </div>
+            </div>
+
+            <div class="buy">
+                <div class="buy__container">
+                    <img src="images/sec2_img1.png.png" alt="big-mouse">
+                    <article class="buy__text">
+                        <div class="buy__wrap">
+                            <h2>Make your play</h2>
+                            <p>Your power, your control. Conquer MOBA, MMO, and Battle Royale gameplay with the
+                                strategically
+                                designed G604 LIGHTSPEED Wireless Gaming Mouse. 15 programmable controls join forces with
+                                ultra-fast
+                                LIGHTSPEED dual connectivity and the class-leading HERO 16K sensor. It's a multifaceted
+                                battle
+                                weapon that lets you play longer, play better, and make your play.</p>
+                        </div>
+                        <button class="btn">Buy</button>
+                    </article>
                 </div>
             </div>
 
         </section>
 
-        <section class="buy">
+        <!-- <div class="buy">
             <div class="buy__container">
                 <img src="images/sec2_img1.png.png" alt="big-mouse">
                 <article class="buy__text">
-                    <div class="text__wrap">
+                    <div class="buy__wrap">
                         <h2>Make your play</h2>
                         <p>Your power, your control. Conquer MOBA, MMO, and Battle Royale gameplay with the
                             strategically
@@ -130,11 +147,10 @@
                             battle
                             weapon that lets you play longer, play better, and make your play.</p>
                     </div>
-                    <a href="#" class="btn">Buy</a>
+                    <button class="btn">Buy</button>
                 </article>
             </div>
-
-        </section>
+        </div> -->
 
     </main>
 
