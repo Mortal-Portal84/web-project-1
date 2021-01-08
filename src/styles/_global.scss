@@ -170,7 +170,7 @@ p {
     }
   }
 
-  .home__arrow {
+  &__arrow {
     position: absolute;
 
     bottom: 70px;
@@ -355,14 +355,13 @@ p {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+
   }
 
-  .buy__text {
+  .buy__inner {
     width: 530px;
-    margin-top: -50px;
 
-
-    .buy__wrap {
+    .buy__text {
       padding-bottom: 12px;
     }
 
@@ -376,4 +375,18 @@ p {
       }
     }
   }
+}
+
+.slide-1 {
+  position: relative;
+
+  &__title {
+    
+  }
+}
+
+
+//Swiper
+.swiper-container {
+  
 }
