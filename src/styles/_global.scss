@@ -158,11 +158,11 @@ p {
     flex-direction: column;
 
     position: absolute;
-    top: 150px;
+    top: calc(50% - 65vh/2);
     left: 0;
 
     width: 5vw;
-    height: 60vh;
+    height: 65vh;
     border-right: 1px solid #ffffff66;
 
     .scroll-dot {
@@ -173,10 +173,10 @@ p {
   &__arrow {
     position: absolute;
 
-    bottom: 70px;
+    bottom: 50px;
     left: 0;
-    width: 5vw;
-    height: 125px;
+    width: 5%;
+    height: 100px;
 
     &-wrap {
       position: relative;
@@ -202,6 +202,7 @@ p {
     align-items: center;
     flex-wrap: wrap;
     min-height: 100vh;
+    padding-top: 150px;
   }
 
 
@@ -209,6 +210,7 @@ p {
   &__text {
 
     max-width: 575px;
+    padding-bottom: 100px;
 
     h1 {
       font-weight: bold;
@@ -238,7 +240,7 @@ p {
     min-width: 500px;
     align-self: center;
     // position can be different on any displays
-    align-self: flex-end;
+    align-self: center;
     margin-bottom: 60px;
 
     .img-1 {
@@ -324,22 +326,20 @@ p {
   &__follow {
 
     position: absolute;
-    top: 150px;
+    top: calc(50% - 65vh/2);
     right: 0;
 
-    .social {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      width: 5vw;
-      height: 60vh;
-      border-left: 1px solid #ffffff66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 5vw;
+    height: 65vh;
+    border-left: 1px solid #ffffff66;
 
-      &-ico {
-        margin-bottom: 25px;
-        padding: 5px;
-      }
+    .follow-ico {
+      margin-bottom: 25px;
+      padding: 5px;
     }
   }
 }
@@ -349,13 +349,16 @@ p {
   background: linear-gradient(180deg, #262729 0%, #17181A 100%);
 
   &__container {
-    @extend %container;
-    min-height: 85vh;
+    @extend %container;    
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 100px 0;
+  }
 
+  img {
+    padding-bottom: 10px;
   }
 
   .buy__inner {
@@ -377,16 +380,8 @@ p {
   }
 }
 
-.slide-1 {
-  position: relative;
-
-  &__title {
-    
-  }
-}
-
-
 //Swiper
 .swiper-container {
-  
+
+  width: 100vw;
 }
