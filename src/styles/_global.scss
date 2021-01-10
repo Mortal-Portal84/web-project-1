@@ -101,14 +101,14 @@ p {
   box-sizing: border-box;
 
   min-width: 290px;
-  padding: 28px 50px;
 
   font-family: $font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 83px;
   text-align: center;
+  vertical-align: middle;
 
   background: transparent;
   color: $primary;
@@ -148,7 +148,8 @@ p {
 .home {
 
   position: relative;
-
+  padding-top: 150px;
+  min-height: 100vh;
   background: $background-color center / cover no-repeat url(../images/bg.jpg);
 
   &__scroll {
@@ -201,8 +202,6 @@ p {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    min-height: 100vh;
-    padding-top: 150px;
   }
 
 
@@ -210,7 +209,6 @@ p {
   &__text {
 
     max-width: 575px;
-    padding-bottom: 100px;
 
     h1 {
       font-weight: bold;
@@ -237,11 +235,11 @@ p {
 
   &__pictures {
     display: flex;
-    min-width: 500px;
     align-self: center;
-    // position can be different on any displays
     align-self: center;
-    margin-bottom: 60px;
+    flex: 1 1 33%;
+    max-width: 50%;
+    padding: 70px 0;
 
     .img-1 {
       margin-right: 40px;
@@ -349,7 +347,7 @@ p {
   background: linear-gradient(180deg, #262729 0%, #17181A 100%);
 
   &__container {
-    @extend %container;    
+    @extend %container;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -380,8 +378,80 @@ p {
   }
 }
 
-//Swiper
 .swiper-container {
 
-  width: 100vw;
+  .swiper-button-next {
+    right: 30px;
+    top: calc(57% - 44px/2);
+
+    background-image: url(../images/arrow-next.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .swiper-button-prev {
+    left: 30px;
+    top: calc(57% - 44px/2);
+
+    background-image: url(../images/arrow-prev.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .swiper-wrapper {
+
+    .swiper-slide {
+      position: relative;
+    }
+
+    h2 {
+      position: absolute;
+      top: 12%;
+      width: 100%;
+
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 59px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+
+  .swiper-pagination-bullet {
+
+    background-image: url(../images/point.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;    
+    opacity: 1;
+    background-color: transparent;   
+    
+    margin: 6px 20px !important;
+
+  }
+
+  .swiper-pagination-bullet-active {
+    background-image: url(../images/point_active.svg);
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;    
+    opacity: 1;
+    background-color: transparent;
+
+    margin: 0 20px !important;
+  }
+
 }
