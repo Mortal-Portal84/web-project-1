@@ -184,14 +184,18 @@ p {
 
       a {
         position: absolute;
-        right: -11px;
-        writing-mode: sideways-lr;
+        // right: -11px;
+        // writing-mode: sideways-lr;
+        right: 0;
+        transform: rotate(-90deg) translate(-50%, 79%);
       }
 
       img {
         position: absolute;
-        right: -4px;
-        top: 77px;
+        // right: -4px;
+        // top: 77px;
+        right: 0;
+        transform: translate(50%, 172%);
       }
     }
   }
@@ -433,10 +437,10 @@ p {
     background-image: url(../images/point.svg);
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-position: center;    
+    background-position: center;
     opacity: 1;
-    background-color: transparent;   
-    
+    background-color: transparent;
+
     margin: 6px 20px !important;
 
   }
@@ -447,7 +451,7 @@ p {
     height: 20px;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-position: center;    
+    background-position: center;
     opacity: 1;
     background-color: transparent;
 
