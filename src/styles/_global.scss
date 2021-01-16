@@ -184,16 +184,12 @@ p {
 
       a {
         position: absolute;
-        // right: -11px;
-        // writing-mode: sideways-lr;
         right: 0;
         transform: rotate(-90deg) translate(-50%, 79%);
       }
 
       img {
         position: absolute;
-        // right: -4px;
-        // top: 77px;
         right: 0;
         transform: translate(50%, 172%);
       }
@@ -382,80 +378,137 @@ p {
   }
 }
 
-.swiper-container {
+.about {
 
-  .swiper-button-next {
-    right: 30px;
-    top: calc(57% - 44px/2);
+  .swiper-container {
 
-    background-image: url(../images/arrow-next.svg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;
+    .swiper-button-next {
+      right: 30px;
+      top: calc(57% - 44px/2);
 
-    &::after {
-      display: none;
+      background-image: url(../images/arrow-next.svg);
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: center;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .swiper-button-prev {
+      left: 30px;
+      top: calc(57% - 44px/2);
+
+      background-image: url(../images/arrow-prev.svg);
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: center;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .swiper-wrapper {
+
+      .swiper-slide {
+        position: relative;
+      }
+
+      h2 {
+        position: absolute;
+        top: 12%;
+        width: 100%;
+
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 59px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+
+    .swiper-pagination-bullet {
+
+      background-image: url(../images/point.svg);
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: center;
+      opacity: 1;
+      background-color: transparent;
+
+      margin: 6px 20px !important;
+
+    }
+
+    .swiper-pagination-bullet-active {
+      background-image: url(../images/point_active.svg);
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: center;
+      opacity: 1;
+      background-color: transparent;
+
+      margin: 0 20px !important;
     }
   }
+}
 
-  .swiper-button-prev {
-    left: 30px;
-    top: calc(57% - 44px/2);
+.product {
 
-    background-image: url(../images/arrow-prev.svg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;
+  position: relative;
 
-    &::after {
-      display: none;
-    }
+  h2 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 140px 0 0;
   }
 
-  .swiper-wrapper {
+  &__container {
+    @extend %container;
+  }
 
-    .swiper-slide {
-      position: relative;
-    }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 75px 0;
 
-    h2 {
-      position: absolute;
-      top: 12%;
-      width: 100%;
+  }
 
+  &__text {
+
+    max-width: 644px;
+
+    h3 {
       font-weight: bold;
-      font-size: 48px;
-      line-height: 59px;
-      text-align: center;
-      text-transform: uppercase;
+      font-size: 36px;
+      line-height: 1.8;
+    }
+
+    p {
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 29px;
     }
   }
 
+  &__btn-wrap {
 
-  .swiper-pagination-bullet {
+    width: 100%;
+    padding: 20px 0 250px;
 
-    background-image: url(../images/point.svg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;
-    opacity: 1;
-    background-color: transparent;
-
-    margin: 6px 20px !important;
-
-  }
-
-  .swiper-pagination-bullet-active {
-    background-image: url(../images/point_active.svg);
-    width: 20px;
-    height: 20px;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;
-    opacity: 1;
-    background-color: transparent;
-
-    margin: 0 20px !important;
+    .btn {
+      display: block;
+      margin: 0 auto;
+    }
   }
 
 }
