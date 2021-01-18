@@ -185,7 +185,10 @@ p {
       a {
         position: absolute;
         right: 0;
-        transform: rotate(-90deg) translate(-50%, 79%);
+        transform: rotate(-90deg) translate(-50%, 90%);
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
       }
 
       img {
@@ -239,7 +242,7 @@ p {
     align-self: center;
     flex: 1 1 33%;
     max-width: 50%;
-    padding: 70px 0;
+    padding: 100px 0 0;
 
     .img-1 {
       margin-right: 40px;
@@ -434,6 +437,10 @@ p {
       }
     }
 
+    .swiper-pagination-bullets {
+      bottom: 10%;
+    }
+
     .swiper-pagination-bullet {
 
       background-image: url(../images/point.svg);
@@ -464,7 +471,56 @@ p {
 
 .product {
 
+  background: linear-gradient(180deg, #303134 0%, #1F2023 100%);
+
   position: relative;
+
+  .product__scroll {
+
+    position: absolute;
+    top: 18%;
+    left: calc(50% - 62px/2);
+
+    .product__scroll-inner {
+
+      position: relative;
+      width: 62px;
+      height: 1360px;
+
+      .product__scroll-line {
+
+        position: absolute;
+        top: 0;
+        left: calc(50% - 2px/2);
+        width: 2px;
+        height: 100%;
+        background-color: $secondary;
+
+      }
+
+      .product__scroll-circle-1 {
+        position: absolute;
+        top: 0;
+        transform: translateY(-50%);
+      }
+
+      .product__scroll-circle-2 {
+        position: absolute;
+        top: 36%;
+      }
+
+      .product__scroll-circle-3 {
+        position: absolute;
+        bottom: 32%;
+      }
+
+      .product__scroll-circle-4 {
+        position: absolute;
+        bottom: 0;
+        transform: translateY(50%);
+      }
+    }
+  }
 
   h2 {
     font-weight: bold;
@@ -472,7 +528,7 @@ p {
     line-height: 59px;
     text-align: center;
     text-transform: uppercase;
-    padding: 140px 0 0;
+    padding: 140px 0 56px;
   }
 
   &__container {
@@ -484,8 +540,22 @@ p {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 75px 0;
+  }
 
+  .row-1 {
+    padding: 56px 0 35px;
+  }
+
+  .row-2 {
+    padding: 35px 0 60px;
+  }
+
+  .row-3 {
+    padding: 60px 0 54px;
+  }
+
+  .row-4 {
+    padding: 54px 0 0;
   }
 
   &__text {
