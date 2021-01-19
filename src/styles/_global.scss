@@ -589,13 +589,16 @@ p {
 
 .specifications {
 
+  padding: 150px 0 170px;
+  background-color: #17181A;
+
   h2 {
     font-weight: bold;
     font-size: 48px;
     line-height: 1.3;
     text-align: center;
     text-transform: uppercase;
-    padding: 143px 0 65px;
+    padding: 0 0 65px;
   }
 
   &__container {
@@ -605,7 +608,9 @@ p {
   &__text {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     font-size: 16px;
+    flex-shrink: 1 1 33.3%;
 
     span {
       font-weight: bold;
@@ -627,18 +632,21 @@ p {
   &__text-row {
 
     &:nth-child(-n + 2) {
-      line-height: 2;
-
-      h4{
-        padding-bottom: 20px;
-      }
+      line-height: 2;    
     }
 
+    &:nth-child(odd) {
+      text-transform: capitalize;
+    }
+
+    p{
+      padding: 15px 0;
+      margin: 0;
+    }
   }
 
   .row-1 {
-    width: 320px;
-    text-transform: capitalize;
+    width: 320px;    
   }
 
   .row-2 {
@@ -647,6 +655,17 @@ p {
 
   .row-3 {
     width: 390px;
+    
+    p{
+      padding-bottom: 75px;
+    }
   }
 
+  .row-4 {
+    width: 390px;
+
+    p{
+      padding: 15px 0 5px;
+    }
+  }
 }
