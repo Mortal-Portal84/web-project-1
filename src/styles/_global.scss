@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $font-family;
   font-size: $font-size;
@@ -10,13 +14,26 @@ p {
   margin: 0 0 10px;
 }
 
-.header {
+a {
+  color: #ffffff;
+  transition: all .5s ease-in-out;
+}
 
+.header {
   position: fixed;
-  z-index: 1;
+  z-index: 999;
   left: 0;
   right: 0;
   top: 0;
+  transition: all 1s ease;
+
+  &--colored {
+    background-color: $accent5;
+
+    .header__container {
+      height: 80px;
+    }
+  }
 
   &__container {
     max-width: 90vw;
@@ -25,7 +42,7 @@ p {
     justify-content: space-between;
     align-items: center;
     height: 150px;
-
+    transition: all 1s ease;
   }
 
   .nav {
@@ -99,9 +116,7 @@ p {
 .btn {
   display: inline-block;
   box-sizing: border-box;
-
   min-width: 290px;
-
   font-family: $font-family;
   font-style: normal;
   font-weight: 500;
@@ -109,15 +124,16 @@ p {
   line-height: 83px;
   text-align: center;
   vertical-align: middle;
-
   background: transparent;
   color: $primary;
-  border: 2px solid #18E3FF;
+  border: 2px solid $secondary;
   border-radius: 48px;
+  cursor: pointer;
+  transition: all .2s linear;
 
   &:hover {
-    color: #a0e8f1;
-    cursor: pointer;
+    color: $accent5;
+    background-color: $secondary;
   }
 }
 
@@ -138,7 +154,7 @@ p {
     width: 14px;
     height: 14px;
     background: #18E3FF;
-    box-shadow: 0px 0px 10px #18E3FF;
+    box-shadow: 0 0 10px #18E3FF;
     border-radius: 50%;
     margin: 0 auto;
   }
@@ -238,7 +254,6 @@ p {
 
   &__pictures {
     display: flex;
-    align-self: center;
     align-self: center;
     flex: 1 1 33%;
     max-width: 50%;
@@ -611,7 +626,7 @@ p {
     justify-content: space-between;
     flex-wrap: wrap;
     font-size: 16px;
-    flex-shrink: 1 1 33.3%;
+    //flex-shrink: 1 1 33.3%;
 
     span {
       font-weight: bold;
@@ -626,8 +641,6 @@ p {
       font-weight: bold;
       font-size: 18px;
     }
-
-
   }
 
   &__text-row {
@@ -672,8 +685,7 @@ p {
 }
 
 .footer {
-
-  padding: 150px 0 156px;
+  padding-top: 150px;
   position: relative;
   background-color: #121213;
 
@@ -720,21 +732,33 @@ p {
     font-weight: 600;
     font-size: 22px;
 
-
     .footer-link {
       cursor: pointer;
       margin: 15px 0;
+      transition: color .3s ease;
+
+      &:hover {
+        color: $secondary;
+      }
     }
 
     .copyright {
       font-weight: normal;
       font-size: 15px;
-      padding-top: 34px;
+      margin: 150px 0 20px;
+      color: #ccc;
+
+      a {
+        color: $primary;
+
+        &:hover {
+          color: $secondary;
+        }
+      }
     }
   }
 
   &__follow {
-
     display: flex;
     padding-top: 10px;
 
@@ -742,7 +766,5 @@ p {
       padding: 10px;
       margin: 0 14px;
     }
-
   }
-
 }

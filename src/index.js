@@ -13,6 +13,15 @@ import 'swiper/swiper-bundle.css';
 // Styles
 import './styles/index.scss';
 
+//  Header
+window.onscroll = () => {
+  const header = document.getElementById('header')
+  window.scrollY > 80
+    ? header.classList.add('header--colored')
+    : header.classList.remove('header--colored')
+}
+
+
 Swiper.use([Navigation, Pagination]);
 
 const swiper = new Swiper('.swiper-container', {
@@ -21,11 +30,11 @@ const swiper = new Swiper('.swiper-container', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    
+
     pagination: {
       el: '.swiper-pagination',
-      clickable: true,            
+      clickable: true,
     },
-  }); 
-  
+  });
+
 example();
