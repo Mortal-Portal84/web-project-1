@@ -1,40 +1,33 @@
 //  JavaScript
-import example from './js/example';
+import swiper from './js/slider'
 
 //  HTML
-import './index.html';
-
-// import Swiper JS
-import Swiper, { Navigation, Pagination } from 'swiper';
-
-// import Swiper styles
-import 'swiper/swiper-bundle.css';
+import './index.html'
 
 // Styles
-import './styles/index.scss';
+import './styles/index.scss'
 
-//  Header
-window.onscroll = () => {
-  const header = document.getElementById('header')
-  window.scrollY > 80
-    ? header.classList.add('header--colored')
-    : header.classList.remove('header--colored')
-}
+document.addEventListener('DOMContentLoaded',  () => {
+    //  Header with dynamic height and NavLinks
+    const header = document.getElementById('header')
+    const navLinks = document.querySelectorAll('.nav__nav-link')
 
+    window.onscroll = () => {
+        window.scrollY > 80
+            ? header.classList.add('header--scrolled')
+            : header.classList.remove('header--scrolled')
 
-Swiper.use([Navigation, Pagination]);
+        navLinks.forEach(link => {
+            const section = document.querySelector(link.hash)
+            const fromTop = window.scrollY
 
-const swiper = new Swiper('.swiper-container', {
-    loop: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+            section.offsetTop <= fromTop &&
+            section.offsetTop + section.offsetHeight > fromTop
+                ? link.classList.add('nav__nav-link--active')
+                : link.classList.remove('nav__nav-link--active')
+        })
+    }
 
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
-
-example();
+    //  Initialize Swiper
+    swiper()
+})

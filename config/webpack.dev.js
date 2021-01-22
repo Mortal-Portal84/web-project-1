@@ -18,8 +18,8 @@ module.exports = merge(common, {
     watchContentBase: true,
     publicPath: '/',
     open: {
-    app: [ 'firefox' ],  
-    },// Default open: true. The browser application name is platform dependent. Don't hard code it in reusable modules. For example, 'Chrome' is 'Google Chrome' on macOS, 'google-chrome' on Linux and 'chrome' on Windows
+    app: [ 'firefox' ],
+    },// Default open: true. The browser application name is platform dependent. Don't hard code it in reusable modules. For swiperConfig, 'Chrome' is 'Google Chrome' on macOS, 'google-chrome' on Linux and 'chrome' on Windows
     hot: false,
     compress: true,
     overlay: true,

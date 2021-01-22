@@ -1,4 +1,4 @@
-import { sum } from './example'
+import { sum } from './slider'
 
 describe('sum function', () => {
   test('2 + 2 = 4', () => {
