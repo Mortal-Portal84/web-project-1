@@ -201,19 +201,20 @@ a {
         &-wrap {
             position: relative;
 
-            a {
+            span {
                 position: absolute;
                 right: 0;
-                transform: rotate(-90deg) translate(-50%, 90%);
+                transform: rotate(-90deg) translate(-50%, 55%);
                 font-weight: normal;
                 font-size: 14px;
-                line-height: 17px;
+                line-height: 30px;
             }
 
             img {
                 position: absolute;
                 right: 0;
                 transform: translate(50%, 172%);
+                padding: 0 10px
             }
         }
     }
@@ -230,7 +231,8 @@ a {
 
 
     &__text {
-        max-width: 575px;        
+        max-width: 575px;
+        flex: 1 1 45%;        
 
         h1 {
             font-weight: bold;
@@ -255,11 +257,12 @@ a {
 
     &__pictures {
         display: flex;
-        align-self: center;
+        // align-self: center;
         // flex: 1 1 33%;
         // max-width: 50%;
-        flex: 1 1 50%;
-        padding: 100px 100px 0;
+        justify-content: flex-end;
+        flex: 1 1 45%;
+        padding: 90px 0 0;
 
         .img-1 {
             margin-right: 40px;
