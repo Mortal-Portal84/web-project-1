@@ -57,7 +57,7 @@ a {
     .nav {
         display: flex;
         justify-content: space-between;
-        min-width: 36vw;
+        min-width: 25vw;
         flex-wrap: nowrap;
 
         &__nav-link {
@@ -260,16 +260,7 @@ a {
         justify-content: flex-end;
         flex: 1 1 45%;
         padding: 90px 0 0;
-        
-        
-        .img-details__inner {
-            display: none;
-
-            &.active {
-                display: block;
-            }
-        }
-
+                
         .img-1 {
             margin-right: 40px;
             position: relative;
