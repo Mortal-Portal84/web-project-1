@@ -274,7 +274,6 @@ a {
 
             .img__descr {
                 position: absolute;
-                bottom: 100%;
                 width: 250px;
                 height: 130px;
                 bottom: 93%;
@@ -302,7 +301,6 @@ a {
 
             .img__descr {
                 position: absolute;
-                bottom: 100%;
                 width: 270px;
                 bottom: 98%;
                 right: 36%;
@@ -311,7 +309,7 @@ a {
                     color: $primary;
                     font-size: 16px;
                     line-height: 20px;
-                    padding: 0 0 5px 0px;
+                    padding: 0 0 5px 0;
                     text-align: center;
                 }
             }
@@ -456,11 +454,16 @@ a {
 
     .product__scroll {
         position: absolute;
-        width: 62px;
-        top: 17%;
-        bottom: 25%;
+        top: 22%;
+        bottom: 23%;
         left: 50%;
-        transform: translateX(-100%);
+        transform: translateX(-50%);
+        width: 2px;
+        background-color: $secondary;
+
+        @media screen and (max-width: $tablet) {
+            left: 50px;
+        }
 
         .product__scroll-wrap {
             position: relative;
@@ -516,6 +519,16 @@ a {
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+
+        .circle {
+            left: 50%;
+            position: absolute;
+            transform: translateX(-50%);
+
+            @media screen and (max-width: $tablet){
+                left: 50px;
+            }
+        }
     }
 
     .row-1 {
@@ -535,12 +548,13 @@ a {
     }
 
     &__img {
-        max-width: 60%;
+        flex: 1 1 640px;
     }
 
     &__text {
-        max-width: 644px;
-        
+        flex: 1 1 640px;
+        padding-left: 50px;
+
         h3 {
             font-weight: bold;
             font-size: 36px;
