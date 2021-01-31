@@ -547,12 +547,12 @@ a {
         padding: 54px 0 0;
     }
 
-    &__img {
-        flex: 1 1 640px;
+    .product__img {
+        flex: 1 1 400px;
     }
 
-    &__text {
-        flex: 1 1 640px;
+    .product__text {
+        flex: 1 1 400px;
         padding-left: 50px;
 
         h3 {
