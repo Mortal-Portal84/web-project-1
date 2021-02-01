@@ -203,7 +203,7 @@ a {
             span {
                 position: absolute;
                 right: 0;
-                transform: rotate(-90deg) translate(-50%, 55%);
+                transform: rotate(-90deg) translate(-125%, 55%);
                 font-weight: normal;
                 font-size: 14px;
                 line-height: 30px;
@@ -212,7 +212,7 @@ a {
             img {
                 position: absolute;
                 right: 0;
-                transform: translate(50%, 172%);
+                transform: translate(50%, 208%);
                 padding: 0 10px;
                 min-height: 46px;
                 min-width: 28px;
@@ -261,6 +261,7 @@ a {
         justify-content: flex-end;
         flex: 1 1 45%;
         padding: 90px 0 0;
+        max-width: 580px;
 
         .img-1 {
             margin-right: 40px;
