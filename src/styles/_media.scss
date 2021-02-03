@@ -1,11 +1,268 @@
-@media screen and (min-width: $tablet) {
+@media screen and (min-width: $full-hd) {}
 
+@media screen and (max-width: $laptop) {
+
+    .home {
+
+        &__scroll {
+            width: 7vw;
+        }
+
+        &__follow {
+            width: 7vw;
+        }
+
+        &__arrow {
+            width: 7%;
+        }
+    }
 }
 
-@media screen and (min-width: $laptop) {
+@media screen and (max-width: $hd) {
 
+    .home {
+
+        &__text {
+
+            h1 {
+                font-size: 40px;
+                padding-bottom: 16px;
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
 }
 
-@media screen and (min-width: $full-hd) {
+@media screen and (max-width: $tablet) {
+
+    header {
+        display: none;
+    }
+
+    .home {
+        flex-direction: column;
+        padding-top: 50px;
+
+        &__scroll {
+            display: none;
+        }
+
+        &__follow {
+            display: none;
+        }
+
+        &__container {
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        &__text {
+            h1 {
+                font-size: 50px;
+                padding-bottom: 16px;
+            }
+
+            .btn {
+                margin: 0 auto;
+                display: block;
+            }
+        }
+
+        &__pictures {
+            padding: 75px 0 40px;
+        }
+    }
+}
+
+@media screen and (max-width: $iphone6s) {
+
+    .home {        
+
+        &__text {
+
+            h1 {
+                text-align: center;
+            }
+        }
+
+        &__pictures {
+            flex-wrap: wrap;
+            padding: 40px 0 20px;
+
+            .img-1 {
+                max-width: 70%;
+                margin: 0 auto;
+                padding-bottom: 30px;
+
+                .img__descr {
+                    position: absolute;
+                    width: 230px;
+                    height: 125px;
+                    bottom: 67%;
+                    transform: translateX(-90%);
+
+                    .img-btn {
+                        top: 0;
+                        right: 0;
+                    }
+
+                    .img__descr-wrap {
+                        position: relative;
+                        width: 100%;
+
+                        &::before {
+                            display: none;
+                        }
+
+                        &::after {
+                            content: "";
+                            width: 53px;
+                            height: 1px;
+                            background-color: rgba(#FFFFFF, 0.5);
+                            position: absolute;
+                            top: 16px;
+                            right: 42px;
+                        }
+
+                        .img__descr-text {
+                            position: absolute;
+                            top: 2px;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+
+            .img-2 {
+                max-width: 70%;
+                margin: 0 auto;
+                padding-bottom: 30px;
+
+                .img-btn {
+                    position: absolute;
+                    top: 93%;
+                    left: 52%;
+                }
+    
+                .img__descr {                    
+                    bottom: 99%;
+                    right: 0;
+    
+                    .img__descr-wrap {
+                        position: relative;
+                        width: 100%;
+    
+                        &::before {                            
+                            width: 115px;
+                            height: 1px;                            
+                            position: absolute;
+                            transform: rotate(43deg);
+                            top: 67px;
+                            right: 104px;
+                        }
+    
+                        &::after {                            
+                            width: 265px;
+                            height: 1px;
+                            position: absolute;
+                            top: 27px;
+                            right: 4px;
+                        }
+    
+                        .img__descr-text {
+                            position: absolute;
+                            top: 0;
+                            left: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+
+    .home {
+
+        &__text {
+
+            h1 {
+                font-size: 38px;
+                padding-bottom: 16px;
+            }
+
+            h3 {
+                font-size: 15px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .btn {
+                min-width: 250px;
+                font-size: 23px;
+            }
+        }
+
+        &__pictures {
+            
+            .img-1 {                
+
+                .img__descr {                    
+                    width: 230px;
+                    height: 125px;
+                    bottom: 60%;
+                    transform: translateX(-90%);
+
+                    .img__descr-wrap {    
+ 
+                        .img__descr-text {
+                            width: 50%;                            
+                            top: 2px;
+                            left: 50px;
+                        }
+                    }
+                }
+            }
+
+            .img-2 {
+                
+                .img-btn {                    
+                    top: 93%;
+                    left: 52%;
+                }
+    
+                .img__descr {                    
+                    left: -60px;
+    
+                    .img__descr-wrap {                        
+    
+                        &::before {                            
+                            transform: rotate(43deg);
+                            top: 67px;
+                            right: 104px;
+                        }
+    
+                        &::after { 
+                            right: 1px;
+                        }
+    
+                        .img__descr-text {  
+                            left: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 }
